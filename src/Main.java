@@ -175,59 +175,59 @@ public class Main extends javax.swing.JFrame {
                 for (int y = 0; y < 8; y++) {
                     if ((y % 2 == 0 && x % 2 != 0) || (y % 2 != 0 && x % 2 == 0)) {
                         //System.out.println("y");
-                        if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_blanco\\espacio.jpg")) {
+                        if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_blanco/espacio.jpg")) {
                             tablero[fila][y] = "1";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_blanco\\pb.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_blanco/pb.jpg")) {
                             tablero[fila][y] = "P";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_blanco\\PN.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_blanco/PN.jpg")) {
                             tablero[fila][y] = "p";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_blanco\\ab.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_blanco/ab.jpg")) {
                             tablero[fila][y] = "B";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_blanco\\AN.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_blanco/AN.jpg")) {
                             tablero[fila][y] = "b";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_blanco\\cb.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_blanco/cb.jpg")) {
                             tablero[fila][y] = "N";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_blanco\\CN.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_blanco/CN.jpg")) {
                             tablero[fila][y] = "n";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_blanco\\tb.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_blanco/tb.jpg")) {
                             tablero[fila][y] = "R";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_blanco\\TN.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_blanco/TN.jpg")) {
                             tablero[fila][y] = "r";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_blanco\\db.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_blanco/db.jpg")) {
                             tablero[fila][y] = "Q";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_blanco\\DN.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_blanco/DN.jpg")) {
                             tablero[fila][y] = "q";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_blanco\\rb.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_blanco/rb.jpg")) {
                             tablero[fila][y] = "K";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_blanco\\RN.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_blanco/RN.jpg")) {
                             tablero[fila][y] = "k";
                         }
                     } else {
-                        if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_negro\\espacio.jpg")) {
+                        if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_negro/espacio.jpg")) {
                             tablero[fila][y] = "1";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_negro\\pb.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_negro/pb.jpg")) {
                             tablero[fila][y] = "P";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_negro\\PN.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_negro/PN.jpg")) {
                             tablero[fila][y] = "p";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_negro\\ab.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_negro/ab.jpg")) {
                             tablero[fila][y] = "B";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_negro\\AN.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_negro/AN.jpg")) {
                             tablero[fila][y] = "b";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_negro\\cb.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_negro/cb.jpg")) {
                             tablero[fila][y] = "N";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_negro\\CN.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_negro/CN.jpg")) {
                             tablero[fila][y] = "n";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_negro\\tb.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_negro/tb.jpg")) {
                             tablero[fila][y] = "R";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_negro\\TN.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_negro/TN.jpg")) {
                             tablero[fila][y] = "r";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_negro\\db.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_negro/db.jpg")) {
                             tablero[fila][y] = "Q";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_negro\\DN.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_negro/DN.jpg")) {
                             tablero[fila][y] = "q";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_negro\\rb.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_negro/rb.jpg")) {
                             tablero[fila][y] = "K";
-                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "\\recortesCompilado\\fondo_negro\\RN.jpg")) {
+                        } else if (dif.compararImagenes("c:\\recortes\\" + columnas[y] + "" + (x + 1) + ".jpg", "fondo_negro/RN.jpg")) {
                             tablero[fila][y] = "k";
                         }
                     }
@@ -286,7 +286,7 @@ public class Main extends javax.swing.JFrame {
 
             //ImageIO is an API which is used to convert BufferedImage to a png/jpg image     
         } catch (Exception ex) {
-            System.out.println("ha ocurrido un error" + ex.getMessage());
+            jTextArea1.setText("error:"+ex.fillInStackTrace());
         }
     }
 

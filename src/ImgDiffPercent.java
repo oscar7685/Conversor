@@ -9,8 +9,12 @@
  */
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.FileInputStream;
 import javax.imageio.ImageIO;
 import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import javax.swing.JOptionPane;
 
 public class ImgDiffPercent {
 
@@ -18,13 +22,20 @@ public class ImgDiffPercent {
         BufferedImage img1 = null;
         BufferedImage img2 = null;
         String path = new File(".").getCanonicalPath();
+        //this.getClass().getClassLoader().getResourceAsStream(imagen2);
+
         try {
             File file1 = new File(imagen1); // 
-            File file2 = new File(path +"\\src\\"+ imagen2); // 
-            /*File file1 = new File("C:\\recortes\\img49.jpg"); // 
-             File file2 = new File("C:\\recortes\\img53.jpg"); // */
+            URL url = ImgDiffPercent.class.getResource("" + imagen2);
+
+            //System.out.println(url);
+            File file2 = new File(url.getPath()); // 
             img1 = ImageIO.read(file1);
-            img2 = ImageIO.read(file2);
+            InputStream in;
+            in = ImgDiffPercent.class.getClassLoader().getResourceAsStream(imagen2);
+
+            img2 = ImageIO.read(in);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
