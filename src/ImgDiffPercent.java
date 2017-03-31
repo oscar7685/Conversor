@@ -14,13 +14,13 @@ import java.io.IOException;
 
 public class ImgDiffPercent {
 
-    public boolean compararImagenes(String imagen1, String imagen2) {
+    public boolean compararImagenes(String imagen1, String imagen2) throws IOException {
         BufferedImage img1 = null;
         BufferedImage img2 = null;
+        String path = new File(".").getCanonicalPath();
         try {
             File file1 = new File(imagen1); // 
-            File file2 = new File(imagen2); // 
-
+            File file2 = new File(path +"\\src\\"+ imagen2); // 
             /*File file1 = new File("C:\\recortes\\img49.jpg"); // 
              File file2 = new File("C:\\recortes\\img53.jpg"); // */
             img1 = ImageIO.read(file1);
